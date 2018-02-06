@@ -1,6 +1,5 @@
 package cz.gruber.core;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -18,11 +17,6 @@ public class ToastActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toast);
 
-        new StyleableToast
-                .Builder(this)
-                .text("Stylable Toast!")
-                .textColor(Color.WHITE)
-                .backgroundColor(Color.BLUE)
-                .show();
+        StyleableToast.makeText(this, "Stylable Toast says 'Hello'!", R.style.mytoast).show();
     }
 }
