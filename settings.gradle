@@ -1,1 +1,1 @@
-include ':jakub-library'
+include ':jakub-library', ':core', ':core'
